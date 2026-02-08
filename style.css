@@ -1,21 +1,33 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+}
+
+.header {
   background: linear-gradient(to right, #EDDD53, #57C785);
+  padding-top: 90px;
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
-  
+  padding: 20px 40px;
+
+  background: linear-gradient(to right, #EDDD53, #57C785);
 }
+
 
 .nav-logo img {
   width: 140px;
   mix-blend-mode: color-burn;
-  
 }
 
 .nav-menu {
@@ -26,32 +38,52 @@ body {
 }
 
 .nav-menu li {
-  margin-left: 20px;
+  margin-left: 25px;
 }
 
 .nav-menu a {
   text-decoration: none;
-  color: #fff;
+  color: white;
   font-weight: bold;
-  transition: color 0.3s ease;
+  transition: 0.3s ease;
 }
 
+.nav-menu a:hover {
+  color: black;
+}
 
-section {
-  display: block;
+.banner {
   width: 100%;
+  background: url("assests/images/banner-ultimate.svg");
+  background-size: contain;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 140px 20px;
+
+}
+
+.banner h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.banner p {
+  font-size: 20px;
+  opacity: 0.9;
 }
 
 .about {
   margin-top: 120px;
   text-align: center;
-  max-width: 600px;
+  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .about p {
-  color: #555;
+  color: #444;
   line-height: 1.6;
   font-style: italic;
 }
@@ -66,51 +98,46 @@ section {
   padding: 0;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 
 .skills li {
-  color: #444;
+  color: #333;
   font-weight: bold;
 }
-.nav-menu a:hover {
-  color: #000;
- transition: color 0.9s ease;
-}
+
 .projects {
   margin-top: 120px;
   text-align: center;
 }
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 40px auto 0;
 }
+
 .projects-card {
-  background-color: white;
-  padding: 20px;
-  border-radius: 8px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .projects-card:hover {
-  background-color: #ddd;
-   transition: 0.3s;
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-
-.project-card h3 {
-  margin-top: 0;
-}
 .contact {
   margin-top: 120px;
   text-align: center;
-  background-color: white;
-  padding: 50px 20px;
-  border-radius: 8px;
+  background: linear-gradient(to right, #EDDD53, #57C785);
+  padding: 60px 20px;
+  border-radius: 10px;
 }
 
 .contact p {
@@ -121,20 +148,61 @@ section {
   font-weight: bold;
   margin: 10px 0;
 }
-.print-message {
-  font-size: 28px;
-  font-weight: bold;
-  color: black;
-  animation: pulse 1.8s infinite;
-  margin: 30px;
+.mentor-section {
+  margin: 120px auto;
+  max-width: 1000px;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
 }
-.banner-card {
+
+.mentor-top {
   display: flex;
-  justify-content: center;
-  margin: 20px;
   align-items: center;
+  gap: 30px;
 }
 
+.mentor-img {
+  width: 150px;
+  border-radius: 50%;
+}
 
+.mentor-text h2 {
+  margin-bottom: 10px;
+}
 
+.social-cards {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.social-card {
+  text-align: center;
+  flex: 1;
+}
+
+.social-card img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.social-card h3 {
+  margin: 10px 0;
+}
+
+.social-card button {
+  margin-top: 10px;
+  padding: 8px 18px;
+  border: none;
+  background: #666;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.social-card button:hover {
+  background: black;
+}
 

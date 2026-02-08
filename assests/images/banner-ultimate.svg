@@ -1,0 +1,40 @@
+<svg width="1600" height="600" viewBox="0 0 1600 600" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027"></stop>
+      <stop offset="50%" stop-color="#203a43"></stop>
+      <stop offset="100%" stop-color="#2c5364"></stop>
+    </linearGradient>
+
+    <linearGradient id="glassGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.15"></stop>
+      <stop offset="100%" stop-color="white" stop-opacity="0.05"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="600" fill="url(#darkGrad)"></rect>
+
+  <rect x="300" y="150" width="1000" height="300" rx="25" fill="url(#glassGrad)" stroke="white" stroke-opacity="0.1"></rect>
+
+  <g fill="#00ffff" opacity="0.4" font-family="monospace" font-size="18">
+    <text x="200" y="100">&lt;html&gt;</text>
+    <text x="250" y="130">&lt;body&gt;</text>
+    <text x="300" y="160">&lt;h1&gt;Developer&lt;/h1&gt;</text>
+    <text x="350" y="190">&lt;/body&gt;</text>
+    <text x="400" y="220">&lt;/html&gt;</text>
+  </g>
+
+  <circle cx="200" cy="500" r="40" fill="#00ffff" opacity="0.15">
+    <animate attributeName="cy" values="500;450;500" dur="6s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <circle cx="1400" cy="100" r="60" fill="#00ffff" opacity="0.1">
+    <animate attributeName="cy" values="100;150;100" dur="8s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <rect x="100" y="300" width="80" height="80" fill="#00ffff" opacity="0.08">
+    <animateTransform attributeName="transform" type="rotate" from="0 140 340" to="360 140 340" dur="20s" repeatCount="indefinite"></animateTransform>
+  </rect>
+
+</svg>
