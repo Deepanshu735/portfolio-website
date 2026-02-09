@@ -51,16 +51,19 @@ body {
 .nav-menu a:hover {
   color: black;
 }
+.hero-text {
+  padding-top: 160px;
+  padding-bottom: 60px;
+  text-align: center;
+  background: linear-gradient(to right, #EDDD53, #57C785);
+  color: white;
+}
 
 .banner {
   width: 100%;
-  background: url("assests/images/banner-ultimate.svg");
-  background-size: contain;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 140px 20px;
-
+  height: 70vh;
+  background: url("assests/images/banner-ultimate.svg") no-repeat center;
+  background-size: cover;
 }
 
 .banner h2 {
@@ -74,13 +77,14 @@ body {
 }
 
 .about {
-  margin-top: 120px;
+  background: white;
+  padding: 50px;
+  border-radius: 14px;
+  max-width: 900px;
+  margin: 100px auto;
   text-align: center;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  
 }
+
 
 .about p {
   color: #444;
@@ -94,15 +98,18 @@ body {
 }
 
 .skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
 }
 
 .skills li {
-  color: #333;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -113,23 +120,23 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 40px auto 0;
 }
 
 .projects-card {
   background: white;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: 0.3s ease;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .projects-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
 }
 
 .contact {
@@ -148,23 +155,25 @@ body {
   font-weight: bold;
   margin: 10px 0;
 }
-.mentor-section {
-  margin: 120px auto;
-  max-width: 1000px;
+.image-section {
   background: white;
-  padding: 40px;
-  border-radius: 12px;
+  padding: 50px;
+  border-radius: 14px;
+  max-width: 1100px;
+  margin: 100px auto;
 }
 
-.mentor-top {
+.image-top {
   display: flex;
+  gap: 40px;
   align-items: center;
-  gap: 30px;
 }
 
-.mentor-img {
-  width: 150px;
+.image-img {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .mentor-text h2 {
@@ -174,13 +183,20 @@ body {
 .social-cards {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+
 .social-card {
+  background: #f1f1f1;
+  padding: 25px;
+  border-radius: 12px;
+  width: 200px;
   text-align: center;
-  flex: 1;
 }
 
 .social-card img {
